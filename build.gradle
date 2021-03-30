@@ -20,6 +20,20 @@ dependencies {
 	// https://mvnrepository.com/artifact/mysql/mysql-connector-java
 	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
 
+	// https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+	//implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.30.Final'
+
+    // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
+	implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.0'
+
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen
+	// compileOnly group: 'org.hibernate', name: 'hibernate-jpamodelgen', version: '5.4.30.Final'
+
+
+
 }
 
 test {

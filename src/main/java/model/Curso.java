@@ -1,12 +1,18 @@
-package parte3;
+package model;
+
 
 import java.sql.Time;
-
+import java.time.LocalTime;
 
 public class Curso {
+
     private Integer id;
     private String nome;
     private Time duracaoHoras;
+
+    public Curso() {
+
+    }
 
     public Curso(Integer id, String nome, Time duracaoHoras) {
         this.id = id;
@@ -17,10 +23,6 @@ public class Curso {
     public Curso(String nome, Time duracaoHoras) {
         this.nome = nome;
         this.duracaoHoras = duracaoHoras;
-    }
-
-    public Curso() {
-
     }
 
     public Integer getId() {

@@ -1,4 +1,5 @@
-package parte3;
+package model;
+
 
 public class Aluno {
 
@@ -9,6 +10,12 @@ public class Aluno {
 
     public Aluno(int id, String nome, int idade, String estado) {
         this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.estado = estado;
+    }
+
+    public Aluno(String nome, int idade, String estado) {
         this.nome = nome;
         this.idade = idade;
         this.estado = estado;

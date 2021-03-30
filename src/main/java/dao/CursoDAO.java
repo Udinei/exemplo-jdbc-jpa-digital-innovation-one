@@ -1,4 +1,7 @@
-package parte3;
+package dao;
+
+import conexao.ConnectionFactory;
+import model.Curso;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,15 +16,14 @@ public class CursoDAO {
         try(Connection conn = ConnectionFactory.getConnection()) {
 
             // 2 - escrever a sentença SQL
-            String sql = "INSERT INTO curso (id, nome, duracao_horas) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO curso (nome, duracao_horas) VALUES ( ?, ?)";
 
             // 3 - passar a consulta sql para um prepareStatement usando a conexao
             PreparedStatement stmt = conn.prepareStatement(sql);
 
             // 4 - passar os parametros do objeto a ser criado para o prepareStatement
-            stmt.setInt(1, curso.getId());
-            stmt.setString(2, curso.getNome());
-            stmt.setTime(3, curso.getDuracaoHoras());
+            stmt.setString(1, curso.getNome());
+            stmt.setTime(2, curso.getDuracaoHoras());
 
             // 5 - retorna a qtd de linhas afetadas no BD
             int rowAffected = stmt.executeUpdate();

@@ -1,4 +1,7 @@
-package parte3;
+package dao;
+
+import conexao.ConnectionFactory;
+import model.Aluno;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

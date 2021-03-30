@@ -1,4 +1,4 @@
-package parte3;
+package conexao;
 
 import java.io.IOException;
 import java.io.InputStream;
